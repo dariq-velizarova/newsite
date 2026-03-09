@@ -1,0 +1,110 @@
+<style>
+        :root {
+            --primary-bg: #fdf6f0;
+            --accent-color: #d4a373;
+            --text-main: #4a3f35;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=1000') center/cover;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 4px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 80px 10% ;
+            background: var(--white);
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-card h3 {
+            color: var(--accent-color);
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--accent-color);
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        /* Events Section */
+        .events {
+            padding: 60px 10%;
+            background-color: var(--primary-bg);
+        }
+
+        .event-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .event-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0d5c8;
+        }
+
+        /* Footer Info */
+        footer {
+            background: #4a3f35;
+            color: #fdf6f0;
+            padding: 50px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h4 {
+            color: var(--accent-color);
+        }
+
+        .btn-learn {
+            background: var(--accent-color);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn-learn:hover {
+            background: #bc8a5f;
+        }
+    </style>
